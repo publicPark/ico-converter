@@ -160,8 +160,16 @@ a:hover {
   opacity: 0.8;
 }
 
+p {
+  margin: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+
+  .title img {
+    filter: invert(100%);
   }
 }

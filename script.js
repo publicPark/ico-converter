@@ -93,6 +93,7 @@ document.getElementById('convertButton').addEventListener('click', async () => {
         originalLink.innerText = `Download Original (${originalSize}px)`;
         originalLink.style.display = 'block';
         document.getElementById('downloadButtons').appendChild(originalLink);
+        window.scrollTo(0, document.body.scrollHeight);
       };
       image.src = event.target.result;
     };
