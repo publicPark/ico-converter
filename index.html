@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Size .ico Converter</title>
+    <meta
+      name="description"
+      content="Convert images to .ico files for multi-size favicon 16, 32, 64, 128, 256, 512px"
+    />
+    <meta name="keywords" content="image, ico, converter, favicon" />
+    <meta name="author" content="Your Name" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="title">
+        <h1 class="visuallyhidden">Multi-Size .ico Converter</h1>
+        <h2>Convert images to .ico files</h2>
+        <h4>for multi-size favicon 16, 32, 64, 128, 256, 512px</h4>
+      </div>
+      <div class="form">
+        <!-- 숨겨진 파일 선택 input 요소 -->
+        <input type="file" accept="image/*" id="imageInput" style="display: none" />
+        <!-- 사용자 정의 스타일을 가진 버튼 -->
+        <label for="imageInput" class="custom-file-upload" id="fileLabel">Choose File or Drag and Drop</label>
+
+        <div id="previewContainer"></div>
+        <button id="convertButton">Convert to .ico</button>
+      </div>
+      <div id="downloadButtons"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
