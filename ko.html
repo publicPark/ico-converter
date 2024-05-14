@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multi Size .ico Converter</title>
+    <title>여러 사이즈 아이콘 변환기</title>
     <meta
       name="description"
-      content="Convert images to .ico files | multi-size icon, favicon 16px, 32px, 64px, 128px, 256px, 512px"
+      content=".ico 확장자로 아이콘 이미지를 변환하세요. 파비콘 16px, 32px, 64px, 128px, 256px, 512px 사이즈"
     />
     <meta name="keywords" content="image, ico, converter, favicon" />
     <meta name="author" content="spsp" />
@@ -21,20 +21,26 @@
   <body>
     <div id="wrapper">
       <div class="title">
-        <a href="ko.html">한국어</a>
-        <h1 class="visuallyhidden">Convert images to .ico files</h1>
-        <h2>Convert images to .ico files</h2>
-        <h4>multi-size icon, favicon</h4>
+        <a href="index.html">English</a>
+        <h1 class="visuallyhidden">
+          이미지를 .ico로 변환하기 | 아이콘, 파비콘 16px, 32px, 64px, 128px, 256px, 512px 사이즈
+        </h1>
+        <h2>이미지를 .ico로 변환하세요</h2>
+        <h4>여러가지 사이즈의 아이콘, 파비콘</h4>
         <h4>16px, 32px, 64px, 128px, 256px, 512px</h4>
       </div>
       <div class="form">
         <!-- 숨겨진 파일 선택 input 요소 -->
         <input type="file" accept="image/*" id="imageInput" style="display: none" />
         <!-- 사용자 정의 스타일을 가진 버튼 -->
-        <label for="imageInput" class="custom-file-upload" id="fileLabel">Choose File<br />or<br />Drag and Drop</label>
+        <label for="imageInput" class="custom-file-upload" id="fileLabel">
+          파일을 선택하세요<br />
+          또는<br />
+          드래그 앤 드롭
+        </label>
 
         <div id="previewContainer"></div>
-        <button id="convertButton">Convert!</button>
+        <button id="convertButton">변환하기!</button>
       </div>
       <div id="downloadButtons"></div>
     </div>
