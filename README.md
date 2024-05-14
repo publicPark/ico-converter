@@ -1,5 +1,17 @@
-# ico-converter
+### Convert images to .ico files
 
-Convert images to .ico files for multi-size favicon 16, 32, 64, 128, 256, 512px
+This web application allows you to convert images into .ico files, suitable for use as multi-size icons or favicons.
 
-챗 지피티가 다함
+**Supported Sizes:**
+- Original
+- 16px
+- 32px
+- 64px
+- 128px
+- 256px
+- 512px
+
+Visit [here](https://publicpark.github.io/ico-converter/) to access the converter tool.
+
+---
+챗 지피티가 99% 만든 웹앱입니다.
