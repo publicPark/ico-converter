@@ -66,6 +66,7 @@ document.getElementById('convertButton').addEventListener('click', async () => {
       const image = new Image();
       image.onload = async function () {
         const sizes = [16, 32, 64, 128, 256, 512];
+        const originalSize = image.width; // 이미지의 원본 크기
 
         document.getElementById('downloadButtons').style.display = 'block';
         for (const size of sizes) {
@@ -84,6 +85,14 @@ document.getElementById('convertButton').addEventListener('click', async () => {
             document.getElementById('downloadButtons').appendChild(link);
           }, 'image/x-icon');
         }
+
+        // original 사이즈 버튼 추가
+        const originalLink = document.createElement('a');
+        originalLink.href = event.target.result;
+        originalLink.download = `favicon-original.ico`;
+        originalLink.innerText = `Download Original (${originalSize}px)`;
+        originalLink.style.display = 'block';
+        document.getElementById('downloadButtons').appendChild(originalLink);
       };
       image.src = event.target.result;
     };
